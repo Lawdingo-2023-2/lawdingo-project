@@ -3,11 +3,8 @@ package pe.edu.upc.aaw.lawdingo_g4.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.upc.aaw.lawdingo_g4.dtos.DistrictDTO;
 import pe.edu.upc.aaw.lawdingo_g4.dtos.DocumentationDTO;
-import pe.edu.upc.aaw.lawdingo_g4.entities.District;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Documentation;
-import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.IDistrictService;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.IDocumentationService;
 
 import java.util.List;
@@ -34,5 +31,11 @@ public class DocumentationController {
     @DeleteMapping("/{id}")
     public void eliminar(@PathVariable("id") Integer id){
         dS.delete(id);
+    }
+    @GetMapping("/{id}")
+    public DocumentationDTO listarId(@PathVariable("id") Integer id){
+        ModelMapper m = new ModelMapper();
+        DocumentationDTO dto=m.map(dS.listId(id), DocumentationDTO.class);
+        return dto;
     }
 }

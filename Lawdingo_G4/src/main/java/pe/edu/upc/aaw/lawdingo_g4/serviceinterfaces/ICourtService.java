@@ -8,4 +8,6 @@ public interface ICourtService {
     public void insert(Court court);
     public List<Court> list();
     public void delete(int idCourt);
+    public Court listId(int idCourt);
+    List<Court> findByName(String name);
 }

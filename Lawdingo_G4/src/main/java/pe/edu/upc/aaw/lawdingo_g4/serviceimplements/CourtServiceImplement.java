@@ -27,4 +27,16 @@ public class CourtServiceImplement implements ICourtService {
     public void delete(int idCourt) {
         cR.deleteById(idCourt);
     }
+
+    @Override
+    public Court listId(int idCourt) {
+        return cR.findById(idCourt).orElse(new Court());
+    }
+
+    @Override
+    public List<Court> findByName(String name) {
+        return cR.findByName(name);
+    }
+
+
 }

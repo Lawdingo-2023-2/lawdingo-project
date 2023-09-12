@@ -33,4 +33,18 @@ public class CourtController {
     public void eliminar(@PathVariable("id") Integer id){
         cS.delete(id);
     }
+    @GetMapping("/{id}")
+    public CourtDTO listarId(@PathVariable("id") Integer id){
+        ModelMapper m = new ModelMapper();
+        CourtDTO dto=m.map(cS.listId(id), CourtDTO.class);
+        return dto;
+    }
+
+    @PostMapping("/buscar")
+    public List<CourtDTO> buscar(@RequestBody String nombre){
+        return cS.findByName(nombre).stream().map(x -> {
+            ModelMapper m = new ModelMapper();
+            return m.map(x, CourtDTO.class);
+        }).collect(Collectors.toList());
+    }
 }

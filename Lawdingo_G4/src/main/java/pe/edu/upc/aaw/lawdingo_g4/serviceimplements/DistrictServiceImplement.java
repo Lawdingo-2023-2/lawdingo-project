@@ -28,4 +28,9 @@ public class DistrictServiceImplement implements IDistrictService {
     public void delete(int idDistrict) {
         dR.deleteById(idDistrict);
     }
+
+    @Override
+    public District listId(int idDistrict) {
+        return dR.findById(idDistrict).orElse(new District());
+    }
 }
