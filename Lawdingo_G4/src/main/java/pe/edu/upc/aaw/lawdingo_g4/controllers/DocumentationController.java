@@ -31,4 +31,8 @@ public class DocumentationController {
             return m.map(x, DocumentationDTO.class);
         }).collect(Collectors.toList());
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id){
+        dS.delete(id);
+    }
 }

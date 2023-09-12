@@ -28,4 +28,9 @@ public class CourtController {
             return m.map(x, CourtDTO.class);
         }).collect(Collectors.toList());
     }
+
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id){
+        cS.delete(id);
+    }
 }

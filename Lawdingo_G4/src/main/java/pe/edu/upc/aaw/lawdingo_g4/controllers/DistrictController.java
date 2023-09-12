@@ -28,4 +28,8 @@ public class DistrictController {
             return m.map(x, DistrictDTO.class);
         }).collect(Collectors.toList());
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id){
+        dS.delete(id);
+    }
 }

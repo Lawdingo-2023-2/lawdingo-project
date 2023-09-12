@@ -22,4 +22,9 @@ public class CourtServiceImplement implements ICourtService {
     public List<Court> list() {
         return cR.findAll();
     }
+
+    @Override
+    public void delete(int idCourt) {
+        cR.deleteById(idCourt);
+    }
 }

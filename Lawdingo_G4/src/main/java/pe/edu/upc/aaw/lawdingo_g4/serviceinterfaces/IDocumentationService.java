@@ -7,4 +7,5 @@ import java.util.List;
 public interface IDocumentationService {
     public void insert(Documentation documentation);
     public List<Documentation> list();
+    public void delete(int idDistrict);
 }

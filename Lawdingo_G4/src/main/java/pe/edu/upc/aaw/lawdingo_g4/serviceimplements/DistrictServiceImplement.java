@@ -23,4 +23,9 @@ public class DistrictServiceImplement implements IDistrictService {
     public List<District> list() {
         return dR.findAll();
     }
+
+    @Override
+    public void delete(int idDistrict) {
+        dR.deleteById(idDistrict);
+    }
 }
