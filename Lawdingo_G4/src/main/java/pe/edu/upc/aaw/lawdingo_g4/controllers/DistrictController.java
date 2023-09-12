@@ -28,4 +28,14 @@ public class DistrictController {
             return m.map(x, DistrictDTO.class);
         }).collect(Collectors.toList());
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id){
+        dS.delete(id);
+    }
+    @GetMapping("/{id}")
+    public DistrictDTO listarId(@PathVariable("id") Integer id){
+        ModelMapper m = new ModelMapper();
+        DistrictDTO dto=m.map(dS.listId(id), DistrictDTO.class);
+        return dto;
+    }
 }

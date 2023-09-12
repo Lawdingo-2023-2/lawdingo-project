@@ -7,4 +7,6 @@ import java.util.List;
 public interface IDistrictService {
     public void insert(District district);
     public List<District> list();
+    public void delete(int idDistrict);
+    public District listId(int idDistrict);
 }

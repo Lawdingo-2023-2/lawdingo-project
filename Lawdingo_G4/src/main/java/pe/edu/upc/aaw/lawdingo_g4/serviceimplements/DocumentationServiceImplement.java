@@ -23,4 +23,14 @@ public class DocumentationServiceImplement implements IDocumentationService {
     public List<Documentation> list() {
         return dR.findAll();
     }
+
+    @Override
+    public void delete(int idDocumentation) {
+        dR.deleteById(idDocumentation);
+    }
+
+    @Override
+    public Documentation listId(int idDocumentation) {
+        return dR.findById(idDocumentation).orElse(new Documentation());
+    }
 }
