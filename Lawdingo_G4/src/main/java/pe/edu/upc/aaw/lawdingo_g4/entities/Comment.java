@@ -11,10 +11,11 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "idClient")
-    private Users idClient;
-    
-    @Column(name = "idLawyer", nullable = false)
-    private int idLawyer;
+    private Users client;
+
+    @ManyToOne
+    @JoinColumn(name = "idLawyer", nullable = false)
+    private Users lawyer;
 
     @Column(name = "description", length = 100, nullable = false)
     private String description;
@@ -25,10 +26,10 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(int idComment, int idClient, int idLawyer, String description, int score) {
+    public Comment(int idComment, Users client, Users lawyer, String description, int score) {
         this.idComment = idComment;
-        this.idClient = idClient;
-        this.idLawyer = idLawyer;
+        this.client = client;
+        this.lawyer = lawyer;
         this.description = description;
         this.score = score;
     }
@@ -41,20 +42,20 @@ public class Comment {
         this.idComment = idComment;
     }
 
-    public int getIdClient() {
-        return idClient;
+    public Users getClient() {
+        return client;
     }
 
-    public void setIdClient(int idClient) {
-        this.idClient = idClient;
+    public void setClient(Users client) {
+        this.client = client;
     }
 
-    public int getIdLawyer() {
-        return idLawyer;
+    public Users getLawyer() {
+        return lawyer;
     }
 
-    public void setIdLawyer(int idLawyer) {
-        this.idLawyer = idLawyer;
+    public void setLawyer(Users lawyer) {
+        this.lawyer = lawyer;
     }
 
     public String getDescription() {

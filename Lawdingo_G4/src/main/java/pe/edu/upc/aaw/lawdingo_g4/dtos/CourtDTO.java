@@ -1,28 +1,11 @@
-package pe.edu.upc.aaw.lawdingo_g4.entities;
+package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
-import javax.persistence.*;
+import pe.edu.upc.aaw.lawdingo_g4.entities.District;
 
-@Entity
-@Table(name = "Court")
-public class Court {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CourtDTO {
     private int idCourt;
-    @Column(name = "name", length = 20, nullable = false)
     private String name;
-    @ManyToOne
-    @JoinColumn(name="idDistrict")
     private District district;
-
-    public Court(){
-
-    }
-
-    public Court(int idCourt, String name, District district) {
-        this.idCourt = idCourt;
-        this.name = name;
-        this.district = district;
-    }
 
     public int getIdCourt() {
         return idCourt;
