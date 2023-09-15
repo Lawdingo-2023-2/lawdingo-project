@@ -9,13 +9,13 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idComment;
 
-    @ManyToOne
-    @JoinColumn(name = "idClient")
-    private Users client;
-
-    @ManyToOne
-    @JoinColumn(name = "idLawyer", nullable = false)
-    private Users lawyer;
+//    @ManyToOne
+//    @JoinColumn(name = "idClient")
+//    private rUsers client;
+//
+//    @ManyToOne
+//    @JoinColumn(name = "idLawyer", nullable = false)
+//    private rUsers lawyer;
 
     @Column(name = "description", length = 100, nullable = false)
     private String description;
@@ -26,10 +26,10 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(int idComment, Users client, Users lawyer, String description, int score) {
+    public Comment(int idComment, rUsers client, rUsers lawyer, String description, int score) {
         this.idComment = idComment;
-        this.client = client;
-        this.lawyer = lawyer;
+//        this.client = client;
+//        this.lawyer = lawyer;
         this.description = description;
         this.score = score;
     }
@@ -42,21 +42,21 @@ public class Comment {
         this.idComment = idComment;
     }
 
-    public Users getClient() {
-        return client;
-    }
-
-    public void setClient(Users client) {
-        this.client = client;
-    }
-
-    public Users getLawyer() {
-        return lawyer;
-    }
-
-    public void setLawyer(Users lawyer) {
-        this.lawyer = lawyer;
-    }
+//    public rUsers getClient() {
+//        return client;
+//    }
+//
+//    public void setClient(rUsers client) {
+//        this.client = client;
+//    }
+//
+//    public rUsers getLawyer() {
+//        return lawyer;
+//    }
+//
+//    public void setLawyer(rUsers lawyer) {
+//        this.lawyer = lawyer;
+//    }
 
     public String getDescription() {
         return description;
