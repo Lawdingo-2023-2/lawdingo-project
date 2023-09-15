@@ -10,11 +10,11 @@ public class Comment {
     private int idComment;
 
     @ManyToOne
-    @JoinColumn(name = "idClient")
+    @JoinColumn(name = "idClient", referencedColumnName = "idUsers")
     private Users client;
 
     @ManyToOne
-    @JoinColumn(name = "idLawyer", nullable = false)
+    @JoinColumn(name = "idLawyer", referencedColumnName = "idUsers")
     private Users lawyer;
 
     @Column(name = "description", length = 100, nullable = false)

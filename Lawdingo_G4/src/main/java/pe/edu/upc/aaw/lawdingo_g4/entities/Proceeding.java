@@ -15,18 +15,22 @@ public class Proceeding {
     @ManyToOne
     @JoinColumn(name = "idCourt")
     private Court court;
-    private int idClient;
-    private int idLawyer;
+    @ManyToOne
+    @JoinColumn(name = "idClient", referencedColumnName = "idUsers")
+    private Users client;
+    @ManyToOne
+    @JoinColumn(name = "idLawyer", referencedColumnName = "idUsers")
+    private Users lawyer;
 
     public Proceeding() {
     }
 
-    public Proceeding(int idProceeding, char state, Court court, int idClient, int idLawyer) {
+    public Proceeding(int idProceeding, char state, Court court, Users client, Users lawyer) {
         this.idProceeding = idProceeding;
         this.state = state;
         this.court = court;
-        this.idClient = idClient;
-        this.idLawyer = idLawyer;
+        this.client = client;
+        this.lawyer = lawyer;
     }
 
     public int getIdProceeding() {
@@ -53,19 +57,19 @@ public class Proceeding {
         this.court = court;
     }
 
-    public int getIdClient() {
-        return idClient;
+    public Users getClient() {
+        return client;
     }
 
-    public void setIdClient(int idClient) {
-        this.idClient = idClient;
+    public void setClient(Users client) {
+        this.client = client;
     }
 
-    public int getIdLawyer() {
-        return idLawyer;
+    public Users getLawyer() {
+        return lawyer;
     }
 
-    public void setIdLawyer(int idLawyer) {
-        this.idLawyer = idLawyer;
+    public void setLawyer(Users lawyer) {
+        this.lawyer = lawyer;
     }
 }
