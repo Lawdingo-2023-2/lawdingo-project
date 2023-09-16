@@ -7,4 +7,6 @@ import java.util.List;
 public interface ICommentService {
     public void insert(Comment comment);
     public List<Comment> list();
+
+    public List<String[]> listCommentByLawyer(int idLaw);
 }

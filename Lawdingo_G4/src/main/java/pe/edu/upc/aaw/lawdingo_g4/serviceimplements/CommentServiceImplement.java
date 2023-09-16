@@ -22,4 +22,9 @@ public class CommentServiceImplement implements ICommentService {
     public List<Comment> list() {
         return pR.findAll();
     }
+
+    @Override
+    public List<String[]> listCommentByLawyer(int idLaw) {
+        return pR.listCommentByLawyer(idLaw);
+    }
 }
