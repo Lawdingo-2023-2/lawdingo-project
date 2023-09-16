@@ -3,28 +3,28 @@ package pe.edu.upc.aaw.lawdingo_g4.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.upc.aaw.lawdingo_g4.dtos.CourtDTO;
-import pe.edu.upc.aaw.lawdingo_g4.entities.Court;
-import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ICourtService;
+import pe.edu.upc.aaw.lawdingo_g4.dtos.CommentDTO;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Comment;
+import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ICommentService;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/courts")
-public class CourtController {
+@RequestMapping("/comments")
+public class CommentController {
     @Autowired
-    private ICourtService cS;
+    private ICommentService cS;
     @PostMapping
-    public void registrar(@RequestBody CourtDTO dto){
+    public void registrar(@RequestBody CommentDTO dto){
         ModelMapper m = new ModelMapper();
-        Court c=m.map(dto,Court.class);
+        Comment c = m.map(dto, Comment.class);
         cS.insert(c);
     }
     @GetMapping
-    public List<CourtDTO>listar(){
+    public List<CommentDTO> listar(){
         return cS.list().stream().map(x -> {
             ModelMapper m = new ModelMapper();
-            return m.map(x, CourtDTO.class);
+            return m.map(x, CommentDTO.class);
         }).collect(Collectors.toList());
     }
 }
