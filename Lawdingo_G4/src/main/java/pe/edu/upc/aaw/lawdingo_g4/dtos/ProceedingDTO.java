@@ -1,37 +1,18 @@
-package pe.edu.upc.aaw.lawdingo_g4.entities;
+package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
-import javax.persistence.*;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Court;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Users;
 
-@Entity
-@Table(name = "Proceeding")
-public class Proceeding {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProceedingDTO {
     private int idProceeding;
 
-    @Column(name = "state", nullable = false)
     private char state;
 
-    @ManyToOne
-    @JoinColumn(name = "idCourt")
     private Court court;
-    @ManyToOne
-    @JoinColumn(name = "idClient", referencedColumnName = "idUser")
+
     private Users client;
-    @ManyToOne
-    @JoinColumn(name = "idLawyer", referencedColumnName = "idUser")
+
     private Users lawyer;
-
-    public Proceeding() {
-    }
-
-    public Proceeding(int idProceeding, char state, Court court, Users client, Users lawyer) {
-        this.idProceeding = idProceeding;
-        this.state = state;
-        this.court = court;
-        this.client = client;
-        this.lawyer = lawyer;
-    }
 
     public int getIdProceeding() {
         return idProceeding;
