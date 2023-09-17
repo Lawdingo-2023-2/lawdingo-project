@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.aaw.lawdingo_g4.dtos.CourtDTO;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Court;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ICourtService;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
