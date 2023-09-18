@@ -8,4 +8,5 @@ public interface IProceedingService {
     public void insert(Proceeding proceeding);
 
     public List<Proceeding> list();
+    public List<String[]> proceedingSummary();
 }
