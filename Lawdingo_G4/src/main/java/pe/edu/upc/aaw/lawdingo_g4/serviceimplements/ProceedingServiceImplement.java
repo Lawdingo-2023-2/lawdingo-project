@@ -23,4 +23,10 @@ public class ProceedingServiceImplement implements IProceedingService {
     public List<Proceeding> list() {
         return pR.findAll();
     }
+
+    @Override
+    public List<String[]> proceedingSummary() {
+        return pR.proceedingSummary();
+    }
+
 }

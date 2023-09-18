@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/ProceedingSummaryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/CommentByLawyerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/CommentByLawyerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ICommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ICommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/CommentServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/CommentServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ProceedingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ProceedingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/IProceedingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/IProceedingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/ProceedingServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/ProceedingServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IProceedingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IProceedingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Enzo&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Nicolas&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/IntelliJIDEAProjects/demo1_202302_si61&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -89,6 +90,8 @@
       <workItem from="1694486729950" duration="6976000" />
       <workItem from="1694790141123" duration="1561000" />
       <workItem from="1694824048366" duration="3402000" />
+      <workItem from="1694924092655" duration="1642000" />
+      <workItem from="1694999946688" duration="3769000" />
     </task>
     <servers />
   </component>
