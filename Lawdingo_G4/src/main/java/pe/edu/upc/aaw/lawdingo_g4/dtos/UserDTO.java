@@ -12,8 +12,8 @@ public class UserDTO {
     private String password;
     private int phone_num;
     private int dni;
-    private LocalDate birthDate;
-    private LocalDate sub_startdate;
+    private LocalDate birthDay;
+    private LocalDate sub_start_date;
     private boolean lawyer;
     private Subscription subscription;
 
@@ -67,19 +67,19 @@ public class UserDTO {
     }
 
     public LocalDate getBirthDate() {
-        return birthDate;
+        return birthDay;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setBirthDate(LocalDate birthDay) {
+        this.birthDay = birthDay;
     }
 
-    public LocalDate getSub_startdate() {
-        return sub_startdate;
+    public LocalDate getSub_start_date() {
+        return sub_start_date;
     }
 
-    public void setSub_startdate(LocalDate sub_startdate) {
-        this.sub_startdate = sub_startdate;
+    public void setSub_start_date(LocalDate sub_start_date) {
+        this.sub_start_date = sub_start_date;
     }
 
     public boolean isLawyer() {

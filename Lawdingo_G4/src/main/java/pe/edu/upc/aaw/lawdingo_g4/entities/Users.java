@@ -24,11 +24,11 @@ public class Users {
     @Column(name ="DNI", unique = true, nullable = false)
     private int dni;
 
-    @Column(name = "birthDate", nullable = false)
-    private LocalDate birthDate;
+    @Column(name = "birthDay", nullable = false)
+    private LocalDate birthDay;
 
-    @Column(name="sub_startdate",nullable = false)
-    private LocalDate sub_startdate;
+    @Column(name="sub_start_date",nullable = false)
+    private LocalDate sub_start_date;
 
     @Column(name="lawyer",nullable = false)
     private boolean lawyer;
@@ -39,15 +39,15 @@ public class Users {
 
     public Users() {}
 
-    public Users(int idUser, String name, String email, String password, int phone_num, int dni, LocalDate birthDate, LocalDate sub_startdate, boolean lawyer, Subscription subscription) {
+    public Users(int idUser, String name, String email, String password, int phone_num, int dni, LocalDate birthDay, LocalDate sub_start_date, boolean lawyer, Subscription subscription) {
         this.idUser = idUser;
         this.name = name;
         this.email = email;
         this.password = password;
         this.phone_num = phone_num;
         this.dni = dni;
-        this.birthDate = birthDate;
-        this.sub_startdate = sub_startdate;
+        this.birthDay = birthDay;
+        this.sub_start_date = sub_start_date;
         this.lawyer = lawyer;
         this.subscription = subscription;
     }
@@ -101,19 +101,19 @@ public class Users {
     }
 
     public LocalDate getBirthDate() {
-        return birthDate;
+        return birthDay;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setBirthDate(LocalDate birthDay) {
+        this.birthDay = birthDay;
     }
 
-    public LocalDate getSub_startdate() {
-        return sub_startdate;
+    public LocalDate getSub_start_date() {
+        return sub_start_date;
     }
 
-    public void setSub_startdate(LocalDate sub_startdate) {
-        this.sub_startdate = sub_startdate;
+    public void setSub_start_date(LocalDate sub_start_date) {
+        this.sub_start_date = sub_start_date;
     }
 
     public boolean isLawyer() {
