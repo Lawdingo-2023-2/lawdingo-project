@@ -33,4 +33,9 @@ public class DistrictServiceImplement implements IDistrictService {
     public District listId(int idDistrict) {
         return dR.findById(idDistrict).orElse(new District());
     }
+
+    @Override
+    public List<String[]> quantityProceedingByDistrict() {
+        return dR.quantityProceedingByDistrict();
+    }
 }
