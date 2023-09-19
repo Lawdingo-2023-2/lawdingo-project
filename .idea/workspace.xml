@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/rUsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/rUsersDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/RoleServiceImplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/rUserServiceImplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IrUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CourtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CourtController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/DistrictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/DistrictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/DocumentationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/DocumentationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -46,9 +52,10 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Nicolas&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJIDEAProjects/demo1_202302_si61&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AngieQ&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Angie/Downloads&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -60,6 +67,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pe.edu.upc.aaw.lawdingo_g4.controllers" />
+      <recent name="pe.edu.upc.aaw.lawdingo_g4.dtos" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="LawdingoG4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -85,11 +98,10 @@
       <workItem from="1694450705637" duration="741000" />
       <workItem from="1694460214799" duration="2526000" />
       <workItem from="1694486729950" duration="6976000" />
-      <workItem from="1694790141123" duration="1561000" />
-      <workItem from="1694824048366" duration="3402000" />
-      <workItem from="1694924092655" duration="1642000" />
-      <workItem from="1694999946688" duration="3769000" />
-      <workItem from="1695100405172" duration="1087000" />
+      <workItem from="1694496717567" duration="8583000" />
+      <workItem from="1694606655110" duration="450000" />
+      <workItem from="1694729699756" duration="5956000" />
+      <workItem from="1695085582650" duration="3285000" />
     </task>
     <servers />
   </component>
