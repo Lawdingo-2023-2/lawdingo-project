@@ -9,6 +9,8 @@ public class Subscription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idSubscription;
+    
+
 
 
 }

@@ -23,4 +23,12 @@ public class UserServiceImplement implements IUserService {
     public void insert(Users users) {
          uR.save(users);
     }
+
+
+    public List <Users> list( String name){
+        return uR.findByName(name);
+    }
+
+
+
 }
