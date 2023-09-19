@@ -38,6 +38,11 @@ public class UserController {
         }).collect(Collectors.toList());
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Long id){
+        uS.delete(id);
+    }
+
 
 }
 

@@ -30,5 +30,9 @@ public class UserServiceImplement implements IUserService {
     }
 
 
+    @Override
+    public void  delete(Long idUser) {
+        uR.deleteById(idUser);
+    }
 
 }
