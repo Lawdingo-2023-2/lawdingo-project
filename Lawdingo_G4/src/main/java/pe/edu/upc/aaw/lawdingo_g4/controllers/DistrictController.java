@@ -21,6 +21,13 @@ public class DistrictController {
         District d=m.map(dto,District.class);
         dS.insert(d);
     }
+    @PutMapping
+    public void modificar(@RequestBody DistrictDTO dto) {
+        ModelMapper m = new ModelMapper();
+        District d = m.map(dto, District.class);
+        dS.insert(d);
+    }
+
     @GetMapping
     public List<DistrictDTO> listar(){
         return dS.list().stream().map(x -> {
@@ -38,4 +45,6 @@ public class DistrictController {
         DistrictDTO dto=m.map(dS.listId(id), DistrictDTO.class);
         return dto;
     }
+
+
 }
