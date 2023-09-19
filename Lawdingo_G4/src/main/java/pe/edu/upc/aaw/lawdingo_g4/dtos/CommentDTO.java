@@ -1,42 +1,17 @@
-package pe.edu.upc.aaw.lawdingo_g4.entities;
+package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
-import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Users;
 
-@Entity
-@Table(name = "Comment")
-public class Comment {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CommentDTO {
     private int idComment;
 
-    @ManyToOne
-    @JoinColumn(name = "idClient", referencedColumnName = "idUser")
     private Users client;
 
-    @ManyToOne
-    @JoinColumn(name = "idLawyer", referencedColumnName = "idUser")
     private Users lawyer;
 
-    @Column(name = "description", length = 100, nullable = false)
     private String description;
 
-    @Min(0)
-    @Max(10)
-    @Column(name = "score", nullable = false)
     private int score;
-
-    public Comment() {
-    }
-
-    public Comment(int idComment, Users client, Users lawyer, String description, int score) {
-        this.idComment = idComment;
-        this.client = client;
-        this.lawyer = lawyer;
-        this.description = description;
-        this.score = score;
-    }
 
     public int getIdComment() {
         return idComment;
