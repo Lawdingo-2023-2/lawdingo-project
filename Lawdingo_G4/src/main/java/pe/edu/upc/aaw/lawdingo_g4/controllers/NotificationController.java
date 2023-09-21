@@ -42,12 +42,14 @@ public class NotificationController {
 
 
 
+    @PutMapping
     public void modificar(@RequestBody NotificationDTO dto){
         ModelMapper m = new ModelMapper();
         Notification n = m.map(dto, Notification.class);
         jS.insert(n);
     }
 
+    @GetMapping("/{id}")
     public NotificationDTO listarId(@PathVariable("id") Integer id){
         ModelMapper m = new ModelMapper();
         NotificationDTO dto=m.map(jS.listId(id), NotificationDTO.class);

@@ -46,6 +46,7 @@ public class CertificationController {
         jS.insert(n);
     }
 
+    @GetMapping("/{id}")
     public CertificationDTO listarId(@PathVariable("id") Integer id){
         ModelMapper m = new ModelMapper();
         CertificationDTO dto=m.map(jS.listId(id), CertificationDTO.class);
