@@ -29,10 +29,6 @@ public class SubscriptionController {
         return uS.list(name);
     }
 
-    @GetMapping("/{userId}/user-subscriptions")
-    public List<Subscription> getSubscriptionsByUser(@PathVariable int userId) {
-        return uS.getSubscriptionsByUser(userId);
-    }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id){

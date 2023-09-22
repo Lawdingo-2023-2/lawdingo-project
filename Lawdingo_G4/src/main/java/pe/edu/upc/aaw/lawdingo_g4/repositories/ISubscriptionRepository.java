@@ -12,9 +12,6 @@ import java.util.List;
 @Repository
 public interface ISubscriptionRepository extends JpaRepository<Subscription,Integer> {
     List<Subscription> findByName(String name);
-    // Consulta personalizada para obtener las suscripciones por usuario
-    @Query("SELECT u.subscription FROM Users u WHERE u.idUser = :userId")
-    List<Subscription> findSubscriptionsByUser(@Param("userId") int userId);
 
 
 }

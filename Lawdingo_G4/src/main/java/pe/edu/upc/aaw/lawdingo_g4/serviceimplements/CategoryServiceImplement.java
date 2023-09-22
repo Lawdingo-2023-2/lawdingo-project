@@ -21,4 +21,9 @@ public class CategoryServiceImplement implements ICategoryService {
     public List<Category> list() {
         return tR.findAll();
     }
+    @Override
+    public List<String[]> querieCategory() {
+        return tR.quantityConsultationByCategory();
+    }
+
 }
