@@ -3,6 +3,9 @@
 
 name: Build and deploy JAR app to Azure Web App - Lawdingo2023-2
 
+env: # Or as an enviroment variable
+	APP_CONFIGURATION_CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
+  
 on:
   push:
     branches:
