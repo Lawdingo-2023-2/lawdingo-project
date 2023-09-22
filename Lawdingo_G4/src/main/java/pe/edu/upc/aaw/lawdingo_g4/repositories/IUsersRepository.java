@@ -9,7 +9,7 @@ import pe.edu.upc.aaw.lawdingo_g4.entities.Users;
 import java.util.List;
 
 @Repository
-public interface IUsersRepository extends JpaRepository<Users,Long> {
+public interface IUsersRepository extends JpaRepository<Users,Integer> {
 
     // Consulta personalizada utilizando @Query
     @Query(value = "SELECT * FROM Users WHERE name LIKE :startsWith%", nativeQuery = true)

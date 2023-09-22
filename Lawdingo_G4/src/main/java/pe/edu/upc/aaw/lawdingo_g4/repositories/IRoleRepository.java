@@ -7,6 +7,6 @@ import pe.edu.upc.aaw.lawdingo_g4.entities.Role;
 import java.util.Optional;
 
 @Repository
-public interface IRoleRepository extends JpaRepository<Role,Long> {
+public interface IRoleRepository extends JpaRepository<Role,Integer> {
 
 }

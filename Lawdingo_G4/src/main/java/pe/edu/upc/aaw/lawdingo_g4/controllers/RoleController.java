@@ -34,7 +34,7 @@ public class RoleController {
         }).collect(Collectors.toList());
     }
     @GetMapping("/{id}")
-    public RoleDTO listId(@PathVariable("id")Long id){
+    public RoleDTO listId(@PathVariable("id")Integer id){
         ModelMapper m = new ModelMapper();
         RoleDTO dto = m.map(rService.listId(id), RoleDTO.class);
         return dto;

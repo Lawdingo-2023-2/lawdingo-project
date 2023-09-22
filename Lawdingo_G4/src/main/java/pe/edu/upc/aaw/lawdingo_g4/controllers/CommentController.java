@@ -7,7 +7,6 @@ import pe.edu.upc.aaw.lawdingo_g4.dtos.CommentByLawyerDTO;
 import pe.edu.upc.aaw.lawdingo_g4.dtos.CommentDTO;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Comment;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ICommentService;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,6 +22,12 @@ public class CommentController {
         Comment c = m.map(dto, Comment.class);
         cS.insert(c);
     }
+    @PutMapping
+    public void modificar(@RequestBody CommentDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Comment c = m.map(dto, Comment.class);
+        cS.insert(c);
+    }
     @GetMapping
     public List<CommentDTO> listar(){
         return cS.list().stream().map(x -> {
@@ -30,8 +35,12 @@ public class CommentController {
             return m.map(x, CommentDTO.class);
         }).collect(Collectors.toList());
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id){
+        cS.delete(id);
+    }
     @GetMapping("/listCommentByLawyer")
-    public List<CommentByLawyerDTO> listarPorAbogado(@RequestParam Integer idLaw){
+    public List<CommentByLawyerDTO> listarPorIdAbogado(@RequestParam Integer idLaw){
         List<String[]> lista = cS.listCommentByLawyer(idLaw);
         List<CommentByLawyerDTO> listaDTO = new ArrayList<>();
         for (String[] data:lista){

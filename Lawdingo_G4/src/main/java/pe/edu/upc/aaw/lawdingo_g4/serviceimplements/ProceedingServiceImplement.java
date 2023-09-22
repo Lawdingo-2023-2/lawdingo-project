@@ -25,6 +25,11 @@ public class ProceedingServiceImplement implements IProceedingService {
     }
 
     @Override
+    public void delete(int idProceeding) {
+        pR.deleteById(idProceeding);
+    }
+
+    @Override
     public List<String[]> proceedingSummary() {
         return pR.proceedingSummary();
     }

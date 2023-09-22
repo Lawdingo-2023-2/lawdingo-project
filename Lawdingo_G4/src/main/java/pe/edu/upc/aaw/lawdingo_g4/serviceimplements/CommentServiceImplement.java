@@ -24,6 +24,11 @@ public class CommentServiceImplement implements ICommentService {
     }
 
     @Override
+    public void delete(int idCourt) {
+        pR.deleteById(idCourt);
+    }
+
+    @Override
     public List<String[]> listCommentByLawyer(int idLaw) {
         return pR.listCommentByLawyer(idLaw);
     }

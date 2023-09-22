@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import pe.edu.upc.aaw.lawdingo_g4.entities.rUsers;
 
 @Repository
-public interface IrUsersRepository extends JpaRepository<rUsers,Long> {
+public interface IrUsersRepository extends JpaRepository<rUsers,Integer> {
     public rUsers findByUsername(String username);
 
     //BUSCAR POR NOMBRE

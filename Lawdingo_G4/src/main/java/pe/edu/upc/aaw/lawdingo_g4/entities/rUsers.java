@@ -9,7 +9,7 @@ import java.util.List;
 public class rUsers implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(length = 30,unique = true)
     private String username;
     @Column(length = 200)
@@ -19,11 +19,11 @@ public class rUsers implements Serializable {
     @JoinColumn(name = "ruser_id")
     private List<Role> roles;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

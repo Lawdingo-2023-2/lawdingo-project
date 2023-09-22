@@ -8,6 +8,6 @@ public interface IRoleService {
     public void insert(Role role);
 
     List<Role> list();
-    public Role listId(long id);
+    public Role listId(int id);
 
 }

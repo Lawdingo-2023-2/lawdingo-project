@@ -5,17 +5,17 @@ import pe.edu.upc.aaw.lawdingo_g4.entities.Role;
 import java.util.List;
 
 public class rUsersDTO {
-    private Long id;
+    private int id;
     private String username;
     private String password;
     private Boolean enabled;
     private List<Role>roles;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
