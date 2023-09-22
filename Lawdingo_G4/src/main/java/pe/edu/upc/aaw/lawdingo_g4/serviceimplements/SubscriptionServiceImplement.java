@@ -30,10 +30,5 @@ public class SubscriptionServiceImplement implements ISubscriptionService {
         return uS.findByName(name);
     }
 
-    @Override
-
-    public List<Subscription> getSubscriptionsByUser(int userId){
-        return uS.findSubscriptionsByUser(userId);
-    }
 
 }

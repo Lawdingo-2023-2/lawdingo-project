@@ -11,9 +11,9 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "idConsultation")
-    private Consultation consultation;
+
+
+
 
     public int getIdCategory() {
         return idCategory;
@@ -29,13 +29,5 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Consultation getConsultation() {
-        return consultation;
-    }
-
-    public void setConsultation(Consultation consultation) {
-        this.consultation = consultation;
     }
 }

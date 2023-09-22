@@ -5,16 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/rUsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/RoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/rUsersDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/RoleServiceImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/rUserServiceImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IrUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/ConsultationByCategoryDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ConsultationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ConsultationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/SubscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/rUsersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/ConsultationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/ConsultationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/SubscriptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/SubscriptionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/dtos/rUsersDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Consultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Consultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/entities/rUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ISubscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/ISubscriptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/IUsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/IUsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/repositories/IrUsersRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/CategoryServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/CategoryServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/SubscriptionServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/SubscriptionServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/rUserServiceImplement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ISubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ISubscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IrUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,10 +125,22 @@
       <workItem from="1694606655110" duration="450000" />
       <workItem from="1694729699756" duration="5956000" />
       <workItem from="1695085582650" duration="3285000" />
+      <workItem from="1695366215162" duration="3380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

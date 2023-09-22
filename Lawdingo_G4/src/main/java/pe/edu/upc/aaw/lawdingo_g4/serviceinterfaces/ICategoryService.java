@@ -7,5 +7,7 @@ import java.util.List;
 public interface ICategoryService {
     public void insert(Category category);
     List<Category>list();
+    public List<String[]> querieCategory();
+
 
 }

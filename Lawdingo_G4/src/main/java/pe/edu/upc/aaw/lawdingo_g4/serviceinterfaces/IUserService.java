@@ -7,8 +7,9 @@ import java.util.List;
 public interface IUserService {
 
     public List <Users> getUsersWhoseNameStartsWith(String startsWith);
-    public void insert (Users users);
+    public Integer insert (Users users);
+    List<Users> list();
     public List <Users> list(String name);
-    public void  delete (Long idUser);
+    public void  delete (int idUser);
 
 }
