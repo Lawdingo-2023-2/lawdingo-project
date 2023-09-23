@@ -13,7 +13,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
+>>>>>>> parent of d14b0a5 (cambios 11 WD)
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ProceedingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/controllers/ProceedingController.java" afterDir="false" />
@@ -114,6 +117,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21954022",
     "settings.editor.selected.configurable": "project.propDebugger",
@@ -139,6 +143,13 @@
     "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "59e0a30e1a104f14f6e09f77401b07a1",
 >>>>>>> parent of c9a402a (Merge branch 'Enzo')
+=======
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Docker",
+    "settings.editor.splitter.proportion": "0.28134558",
+    "spring.configuration.checksum": "59e0a30e1a104f14f6e09f77401b07a1",
+>>>>>>> parent of d14b0a5 (cambios 11 WD)
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -188,6 +199,7 @@
       <workItem from="1694486729950" duration="6976000" />
 <<<<<<< HEAD
       <workItem from="1695444115549" duration="1995000" />
+<<<<<<< HEAD
       <workItem from="1695465931655" duration="1400000" />
       <workItem from="1695469482409" duration="281000" />
       <workItem from="1695471081479" duration="398000" />
@@ -198,14 +210,12 @@
       <workItem from="1695085582650" duration="3285000" />
       <workItem from="1695270682284" duration="9685000" />
 >>>>>>> parent of eade7df (intento de Web Deployment)
+=======
+>>>>>>> parent of d14b0a5 (cambios 11 WD)
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
