@@ -20,6 +20,7 @@ public class Role implements Serializable {
     @ManyToOne
     @JsonIgnore
     @JoinColumn(name = "user_id")
+
     private Users user;
 
     public Long getIdrol() {
