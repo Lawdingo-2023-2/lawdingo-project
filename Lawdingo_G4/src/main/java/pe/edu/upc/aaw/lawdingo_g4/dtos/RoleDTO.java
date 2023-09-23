@@ -1,20 +1,19 @@
 package pe.edu.upc.aaw.lawdingo_g4.dtos;
-
 import pe.edu.upc.aaw.lawdingo_g4.entities.Users;
 
 public class RoleDTO {
-    private Long idrol;
+    private int id;
 
     private String rol;
 
     private Users user;
 
-    public Long getIdrol() {
-        return idrol;
+    public int getId() {
+        return id;
     }
 
-    public void setIdrol(Long idrol) {
-        this.idrol = idrol;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getRol() {
