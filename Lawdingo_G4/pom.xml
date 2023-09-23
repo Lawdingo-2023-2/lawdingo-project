@@ -90,13 +90,17 @@
                         <image>
                             <name>${project.name}:${project.version}</name>
                             <build>
+<<<<<<< HEAD
                                 <from>eclipse-temurin:17</from>
+=======
+                                <from>amazoncorretto:17</from>
+>>>>>>> parent of d14b0a5 (cambios 11 WD)
                                 <assembly>
                                     <name>build</name>
                                     <descriptionRef>artifact</descriptionRef>
                                 </assembly>
                                 <ports>
-                                    <port>63342</port>
+                                    <port>80</port>
                                 </ports>
                                 <cmd>java -war build/${project.name}--${project.version}.war</cmd>
                             </build>
