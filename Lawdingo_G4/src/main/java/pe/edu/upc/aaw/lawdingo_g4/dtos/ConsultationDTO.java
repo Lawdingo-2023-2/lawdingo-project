@@ -1,7 +1,5 @@
 package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
-import pe.edu.upc.aaw.lawdingo_g4.entities.rUsers;
-
 import java.time.LocalDate;
 
 public class ConsultationDTO {

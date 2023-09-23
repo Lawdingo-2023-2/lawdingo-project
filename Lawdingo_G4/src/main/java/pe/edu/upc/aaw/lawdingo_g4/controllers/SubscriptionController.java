@@ -4,9 +4,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.aaw.lawdingo_g4.dtos.SubscriptionDTO;
+import pe.edu.upc.aaw.lawdingo_g4.dtos.UsersBySubscriptionDTO;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Subscription;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ISubscriptionService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -29,17 +31,28 @@ public class SubscriptionController {
         return uS.list(name);
     }
 
-    @GetMapping("/{userId}/user-subscriptions")
-    public List<Subscription> getSubscriptionsByUser(@PathVariable int userId) {
-        return uS.getSubscriptionsByUser(userId);
+
+
+    @GetMapping("/cantidausuarioporsuscripcion")
+    public List<UsersBySubscriptionDTO>cantidausuarioporsuscripcion (){
+        List<String[]> lista = uS.querieSubscription();
+        List<UsersBySubscriptionDTO> listDTO = new ArrayList<>();
+        for(String[] data : lista){
+            UsersBySubscriptionDTO dto = new UsersBySubscriptionDTO();
+            dto.setNameSubscription(data[0]);
+            dto.setCountUsers(Integer.parseInt(data[1]));
+            listDTO.add(dto);
+
+        }
+        return listDTO;
     }
+
+
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id){
         uS.delete(id);
     }
-
-
 
 
 

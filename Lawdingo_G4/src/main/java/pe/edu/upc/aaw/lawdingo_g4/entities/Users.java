@@ -1,11 +1,15 @@
 package pe.edu.upc.aaw.lawdingo_g4.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "Users")
-public class Users {
+public class Users implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idUser;
@@ -13,9 +17,9 @@ public class Users {
     @Column(name = "name",length = 20,nullable = false)
     private String name;
 
-    @Column (name = "email",length =20, nullable = false)
+    @Column (name = "email",length =60, nullable = false)
     private String email;
-    @Column(name = "password", length = 25, nullable = false)
+    @Column(name = "password", length = 80, nullable = false)
     private String password;
 
     @Column(name = "numberPhone", unique = true,nullable = false)
@@ -24,22 +28,31 @@ public class Users {
     @Column(name ="DNI", unique = true, nullable = false)
     private int dni;
 
-    @Column(name = "birthDay", nullable = false)
+    @Column(name = "bithday",nullable = true) //
     private LocalDate birthDay;
 
-    @Column(name="sub_start_date",nullable = false)
-    private LocalDate sub_start_date;
 
     @Column(name="lawyer",nullable = false)
     private boolean lawyer;
 
-    @ManyToOne
-    @JoinColumn(name ="IdSubscription")
-    private Subscription subscription;
 
-    public Users() {}
+    //AGREGADO o MODIFICADO
+    @Column(name="username", length = 30, nullable = false)
+    private String username;
+    private Boolean enabled;
 
-    public Users(int idUser, String name, String email, String password, int phone_num, int dni, LocalDate birthDay, LocalDate sub_start_date, boolean lawyer, Subscription subscription) {
+    //AGREGADO
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonIgnore
+    @JoinColumn(name = "user_id")
+    private List<Role> roles;
+
+
+    public Users() {
+    }
+
+    public Users(int idUser, String name, String email, String password, int phone_num, int dni, LocalDate birthDay, boolean lawyer, String username, Boolean enabled, List<Role> roles) {
         this.idUser = idUser;
         this.name = name;
         this.email = email;
@@ -47,9 +60,10 @@ public class Users {
         this.phone_num = phone_num;
         this.dni = dni;
         this.birthDay = birthDay;
-        this.sub_start_date = sub_start_date;
         this.lawyer = lawyer;
-        this.subscription = subscription;
+        this.username = username;
+        this.enabled = enabled;
+        this.roles = roles;
     }
 
     public int getIdUser() {
@@ -100,20 +114,12 @@ public class Users {
         this.dni = dni;
     }
 
-    public LocalDate getBirthDate() {
+    public LocalDate getBirthDay() {
         return birthDay;
     }
 
-    public void setBirthDate(LocalDate birthDay) {
+    public void setBirthDay(LocalDate birthDay) {
         this.birthDay = birthDay;
-    }
-
-    public LocalDate getSub_start_date() {
-        return sub_start_date;
-    }
-
-    public void setSub_start_date(LocalDate sub_start_date) {
-        this.sub_start_date = sub_start_date;
     }
 
     public boolean isLawyer() {
@@ -124,11 +130,27 @@ public class Users {
         this.lawyer = lawyer;
     }
 
-    public Subscription getSubscription() {
-        return subscription;
+    public String getUsername() {
+        return username;
     }
 
-    public void setSubscription(Subscription subscription) {
-        this.subscription = subscription;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }
