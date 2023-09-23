@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build target/lawdingo_g4-0.0.1-SNAPSHOT.war lawdingog4.war
-EXPOSE 80
+EXPOSE 63342
 ENTRYPOINT ["java","-jar","lawdingog4.war"]
