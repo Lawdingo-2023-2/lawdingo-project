@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="" />
+    <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
-        <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,43 +37,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Enzo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "git-widget-placeholder": "AngieQ",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.21954022",
-    "settings.editor.selected.configurable": "project.propDebugger",
-    "settings.editor.splitter.proportion": "0.28134558",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "082f67420347c9aa7999e9e29df06f4c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\GitHub\lawdingo-project\lawdingo_g4" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean verify spring-boot:build-image" />
-      <command value="mvn clean verify -Pbuild-with-fabric-8" />
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="LawdingoG4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="lawdingo_g4" />
+      <module name="Lawdingo_G4" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pe.edu.upc.aaw.lawdingo_g4.LawdingoG4Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,18 +71,22 @@
       <workItem from="1694450705637" duration="741000" />
       <workItem from="1694460214799" duration="2526000" />
       <workItem from="1694486729950" duration="6976000" />
-      <workItem from="1695444115549" duration="1995000" />
-      <workItem from="1695465931655" duration="1400000" />
-      <workItem from="1695469482409" duration="281000" />
-      <workItem from="1695471081479" duration="398000" />
+      <workItem from="1695471759465" duration="49000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
