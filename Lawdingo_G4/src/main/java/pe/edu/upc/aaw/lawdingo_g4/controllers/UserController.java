@@ -50,7 +50,6 @@ public class UserController {
             return "Usuario creado";
         }
 
-=======
 //        model.addAttribute("listaUsuarios", uS.list());
 //
 //        return "usersecurity/listUser";

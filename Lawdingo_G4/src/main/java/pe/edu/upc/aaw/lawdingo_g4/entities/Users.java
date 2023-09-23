@@ -45,18 +45,6 @@ public class Users implements Serializable {
     @JoinColumn(name = "user_id")
     private List<Role> roles;
 
-    //AGREGADO o MODIFICADO
-    @Column(name="username", length = 30, nullable = false)
-    private String username;
-    private Boolean enabled;
-
-    //AGREGADO
-
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JsonIgnore
-    @JoinColumn(name = "user_id")
-    private List<Role> roles;
-
 
     public Users() {
     }
