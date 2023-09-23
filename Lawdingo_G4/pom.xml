@@ -90,7 +90,7 @@
                         <image>
                             <name>${project.name}:${project.version}</name>
                             <build>
-                                <from>amazoncorretto:17</from>
+                                <from>openjdk:17</from>
                                 <assembly>
                                     <name>build</name>
                                     <descriptionRef>artifact</descriptionRef>
