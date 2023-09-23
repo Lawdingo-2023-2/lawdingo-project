@@ -87,30 +87,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
-            <!--<plugin>
-                <groupId>io.fabric8</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>0.43.4</version>
-                <configuration>
-                    <images>
-                        <image>
-                            <name>${project.name}:${project.version}</name>
-                            <build>
-                                <from>amazoncorretto:17</from>
-                                <assembly>
-                                    <name>build</name>
-                                    <descriptionRef>artifact</descriptionRef>
-                                </assembly>
-                                <ports>
-                                    <port>8080</port>
-                                </ports>
-                                <cmd>java -war build/${project.name}-${project.version}.war</cmd>
-                            </build>
-                        </image>
-                    </images>
-                </configuration>
-            </plugin>-->
         </plugins>
     </build>
 
