@@ -90,13 +90,13 @@
                         <image>
                             <name>${project.name}:${project.version}</name>
                             <build>
-                                <from>amazoncorretto:17</from>
+                                <from>openjdk:17</from>
                                 <assembly>
                                     <name>build</name>
                                     <descriptionRef>artifact</descriptionRef>
                                 </assembly>
                                 <ports>
-                                    <port>80</port>
+                                    <port>63342</port>
                                 </ports>
                                 <cmd>java -war build/${project.name}--${project.version}.war</cmd>
                             </build>
