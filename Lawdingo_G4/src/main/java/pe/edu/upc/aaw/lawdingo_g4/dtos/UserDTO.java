@@ -1,8 +1,9 @@
 package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
-import pe.edu.upc.aaw.lawdingo_g4.entities.Subscription;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Role;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class UserDTO {
 
@@ -15,7 +16,11 @@ public class UserDTO {
     private LocalDate birthDay;
     private LocalDate sub_start_date;
     private boolean lawyer;
-    private Subscription subscription;
+
+    private String username;
+    private Boolean enabled;
+    private List<Role> roles;
+
 
 
     public int getIdUser() {
@@ -90,11 +95,5 @@ public class UserDTO {
         this.lawyer = lawyer;
     }
 
-    public Subscription getSubscription() {
-        return subscription;
-    }
 
-    public void setSubscription(Subscription subscription) {
-        this.subscription = subscription;
-    }
 }
