@@ -10,7 +10,8 @@ public interface IUserService {
     List<Users> list();
 
     public List <Users> getUsersWhoseNameStartsWith(String startsWith);
-
+    public Integer insert (Users users);
+    List<Users> list();
     public List <Users> list(String name);
     public void  delete (int idUser);
 

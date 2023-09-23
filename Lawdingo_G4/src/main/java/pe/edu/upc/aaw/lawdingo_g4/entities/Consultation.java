@@ -15,9 +15,21 @@ public class Consultation {
     private LocalDate date;
     @Column(name = "description",length = 200,nullable = false)
     private String description;
-//    @ManyToOne
-//    @JoinColumn(name = "idUsers")
-//    private rUsers rUsers;
+
+
+    @ManyToOne
+    @JoinColumn(name = "idClient", referencedColumnName = "idUser")
+    private Users client;
+
+    @ManyToOne
+    @JoinColumn(name = "idLawyer", referencedColumnName = "idUser")
+    private Users lawyer;
+    @ManyToOne
+    @JoinColumn(name = "idCategory")
+    private Category categories;
+
+
+
 
     public int getIdConsultation() {
         return idConsultation;
@@ -51,11 +63,29 @@ public class Consultation {
         this.description = description;
     }
 
-//    public rUsers getUsers() {
-//        return rUsers;
-//    }
-//
-//    public void setUsers(rUsers rUsers) {
-//        this.rUsers = rUsers;
-//    }
+    public Users getClient() {
+        return client;
+    }
+
+    public void setClient(Users client) {
+        this.client = client;
+    }
+
+    public Users getLawyer() {
+        return lawyer;
+    }
+
+    public void setLawyer(Users lawyer) {
+        this.lawyer = lawyer;
+    }
+
+    public Category getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Category categories) {
+        this.categories = categories;
+    }
+
+
 }

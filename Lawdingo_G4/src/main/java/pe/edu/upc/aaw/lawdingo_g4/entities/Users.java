@@ -17,9 +17,9 @@ public class Users implements Serializable {
     @Column(name = "name",length = 20,nullable = false)
     private String name;
 
-    @Column (name = "email",length =60, nullable = false)
+    @Column (name = "email",length =50, nullable = false)
     private String email;
-    @Column(name = "password", length = 80, nullable = false)
+    @Column(name = "password", length = 60, nullable = false)
     private String password;
 
     @Column(name = "numberPhone", unique = true,nullable = false)
@@ -28,13 +28,22 @@ public class Users implements Serializable {
     @Column(name ="DNI", unique = true, nullable = false)
     private int dni;
 
-    @Column(name = "bithday",nullable = true) //
+    @Column(name = "bithday", nullable = true)
     private LocalDate birthDay;
-
 
     @Column(name="lawyer",nullable = false)
     private boolean lawyer;
 
+    @Column(name="username", length = 30, nullable = false)
+    private String username;
+    private Boolean enabled;
+
+    //AGREGADO
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonIgnore
+    @JoinColumn(name = "user_id")
+    private List<Role> roles;
 
     //AGREGADO o MODIFICADO
     @Column(name="username", length = 30, nullable = false)
@@ -114,20 +123,21 @@ public class Users implements Serializable {
         this.dni = dni;
     }
 
-    public LocalDate getBirthDay() {
-        return birthDay;
-    }
-
-    public void setBirthDay(LocalDate birthDay) {
-        this.birthDay = birthDay;
-    }
-
     public boolean isLawyer() {
         return lawyer;
     }
 
     public void setLawyer(boolean lawyer) {
         this.lawyer = lawyer;
+    }
+
+
+    public LocalDate getBirthDay() {
+        return birthDay;
+    }
+
+    public void setBirthDay(LocalDate birthDay) {
+        this.birthDay = birthDay;
     }
 
     public String getUsername() {
@@ -145,6 +155,7 @@ public class Users implements Serializable {
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
+
 
     public List<Role> getRoles() {
         return roles;
