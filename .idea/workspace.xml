@@ -20,11 +20,16 @@
 >>>>>>> parent of 99c714f (modify compiler)
 =======
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/pom.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" afterDir="false" />
+>>>>>>> parent of 1eb77a8 (cambios 14 WD)
     </list>
 >>>>>>> parent of 3486952 (Update workspace.xml)
     <option name="SHOW_DIALOG" value="false" />
@@ -148,11 +153,14 @@
 <<<<<<< HEAD
       <workItem from="1695444115549" duration="1995000" />
       <workItem from="1695465931655" duration="1400000" />
+<<<<<<< HEAD
       <workItem from="1695469482409" duration="281000" />
       <workItem from="1695471081479" duration="398000" />
 =======
 
 >>>>>>> parent of 99c714f (modify compiler)
+=======
+>>>>>>> parent of 1eb77a8 (cambios 14 WD)
     </task>
     <servers />
   </component>
