@@ -1,6 +1,8 @@
 package pe.edu.upc.aaw.lawdingo_g4.dtos;
 
 import pe.edu.upc.aaw.lawdingo_g4.entities.Role;
+import pe.edu.upc.aaw.lawdingo_g4.entities.Subscription;
+
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,14 +16,11 @@ public class UserDTO {
     private int phone_num;
     private int dni;
     private LocalDate birthDay;
-    private LocalDate sub_start_date;
     private boolean lawyer;
-
+    //agregado
     private String username;
     private Boolean enabled;
     private List<Role> roles;
-
-
 
     public int getIdUser() {
         return idUser;
@@ -71,21 +70,6 @@ public class UserDTO {
         this.dni = dni;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDay;
-    }
-
-    public void setBirthDate(LocalDate birthDay) {
-        this.birthDay = birthDay;
-    }
-
-    public LocalDate getSub_start_date() {
-        return sub_start_date;
-    }
-
-    public void setSub_start_date(LocalDate sub_start_date) {
-        this.sub_start_date = sub_start_date;
-    }
 
     public boolean isLawyer() {
         return lawyer;
@@ -95,5 +79,37 @@ public class UserDTO {
         this.lawyer = lawyer;
     }
 
+
+    public LocalDate getBirthDay() {
+        return birthDay;
+    }
+
+    public void setBirthDay(LocalDate birthDay) {
+        this.birthDay = birthDay;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
 }

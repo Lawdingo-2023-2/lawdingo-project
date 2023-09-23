@@ -16,7 +16,6 @@ public class Subscription {
 
     @Column(name= "amount",nullable = false)
     private Double amount;
-
     @Column(name="sub_start_date",nullable = true)
     private LocalDate sub_start_date;
 

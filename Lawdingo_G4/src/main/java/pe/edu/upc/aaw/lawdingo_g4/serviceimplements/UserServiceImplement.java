@@ -10,6 +10,7 @@ import java.util.List;
 
 @Service
 public class UserServiceImplement implements IUserService {
+
     @Autowired
     private IUsersRepository uR;
     @Override
@@ -26,6 +27,7 @@ public class UserServiceImplement implements IUserService {
         //TODO Auto-generated method stub
         return uR.findAll();
     }
+
 
     @Override
     public List<Users> getUsersWhoseNameStartsWith(String startsWith) {

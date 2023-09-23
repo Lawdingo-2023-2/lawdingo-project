@@ -11,6 +11,7 @@ import java.util.List;
 @Repository
 public interface ISubscriptionRepository extends JpaRepository<Subscription,Integer> {
     List<Subscription> findByName(String name);
+
     @Query(value = "select s.name as NombreSuscripcion, count(*) as Cantidadusuarios\n" +
             "from Subscription s inner join Users u\n" +
             "on s.id_user=u.id_user\n" +

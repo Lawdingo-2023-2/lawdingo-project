@@ -32,6 +32,12 @@ public class ConsultationController {
 
         }).collect(Collectors.toList());
     }
+    @PutMapping()
+    public void goUpdate(@RequestBody ConsultationDTO dto){
+        ModelMapper m=new ModelMapper();
+        Consultation u=m.map(dto,Consultation.class);
+        cS.insert(u);
+    }
     @DeleteMapping("{id}")
     public void delete(@PathVariable("id") Integer id){
         cS.delete(id);
