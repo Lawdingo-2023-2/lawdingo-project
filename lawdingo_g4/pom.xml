@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pe.edu.upc.aaw</groupId>
-    <artifactId>Lawdingo_G4</artifactId>
+    <artifactId>lawdingo_g4</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Lawdingo_G4</name>
-    <description>Lawdingo_G4</description>
+    <name>lawdingo_g4</name>
+    <description>lawdingo_g4</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -76,7 +76,41 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <imageName>build-by-spring-boot-plugin-image</imageName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
+            <!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
+            <!--<plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.43.4</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <name>${project.name}:${project.version}</name>
+                            <build>
+                                <from>amazoncorretto:17</from>
+                                <assembly>
+                                    <name>build</name>
+                                    <descriptionRef>artifact</descriptionRef>
+                                </assembly>
+                                <ports>
+                                    <port>8080</port>
+                                </ports>
+                                <cmd>java -war build/${project.name}-${project.version}.war</cmd>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+            </plugin>-->
         </plugins>
     </build>
 
