@@ -3,6 +3,7 @@ package pe.edu.upc.aaw.lawdingo_g4.dtos;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Role;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Subscription;
 
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,7 +21,6 @@ public class UserDTO {
     private String username;
     private Boolean enabled;
     private List<Role> roles;
-
 
     public int getIdUser() {
         return idUser;
@@ -70,13 +70,6 @@ public class UserDTO {
         this.dni = dni;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDay;
-    }
-
-    public void setBirthDate(LocalDate birthDay) {
-        this.birthDay = birthDay;
-    }
 
     public boolean isLawyer() {
         return lawyer;
@@ -85,6 +78,7 @@ public class UserDTO {
     public void setLawyer(boolean lawyer) {
         this.lawyer = lawyer;
     }
+
 
     public LocalDate getBirthDay() {
         return birthDay;
@@ -117,4 +111,5 @@ public class UserDTO {
     public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
+
 }

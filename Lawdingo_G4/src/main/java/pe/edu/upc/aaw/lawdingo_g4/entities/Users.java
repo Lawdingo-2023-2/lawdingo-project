@@ -45,7 +45,21 @@ public class Users implements Serializable {
     @JoinColumn(name = "user_id")
     private List<Role> roles;
 
-    public Users() {}
+    //AGREGADO o MODIFICADO
+    @Column(name="username", length = 30, nullable = false)
+    private String username;
+    private Boolean enabled;
+
+    //AGREGADO
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonIgnore
+    @JoinColumn(name = "user_id")
+    private List<Role> roles;
+
+
+    public Users() {
+    }
 
     public Users(int idUser, String name, String email, String password, int phone_num, int dni, LocalDate birthDay, boolean lawyer, String username, Boolean enabled, List<Role> roles) {
         this.idUser = idUser;
@@ -117,6 +131,7 @@ public class Users implements Serializable {
         this.lawyer = lawyer;
     }
 
+
     public LocalDate getBirthDay() {
         return birthDay;
     }
@@ -140,6 +155,7 @@ public class Users implements Serializable {
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
+
 
     public List<Role> getRoles() {
         return roles;

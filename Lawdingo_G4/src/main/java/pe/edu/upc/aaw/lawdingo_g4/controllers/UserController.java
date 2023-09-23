@@ -32,7 +32,16 @@ public class UserController {
         if (result.hasErrors()) {
             return "usersecurity/user";
         } else {
-
+//            String bcryptPassword = bcrypt.encode(user.getPassword());
+//            user.setPassword(bcryptPassword);
+//            int rpta = uS.insert(user);
+//            if (rpta > 0) {
+//                model.addAttribute("mensaje", "Ya existe");
+//                return "usersecurity/user";
+//            } else {
+//                model.addAttribute("mensaje", "Se guardó correctamente");
+//                status.setComplete();
+//            }
             ModelMapper m = new ModelMapper();
             Users u = m.map(dto, Users.class);
             String bcryptPassword = bcrypt.encode(u.getPassword());
@@ -41,20 +50,39 @@ public class UserController {
             return "Usuario creado";
         }
 
+=======
+//        model.addAttribute("listaUsuarios", uS.list());
+//
+//        return "usersecurity/listUser";
     }
+
+    //PROBAR
+
+    @GetMapping("/list")
+    public String listUser(Model model) {
+        try {
+            model.addAttribute("user", new Users());
+            model.addAttribute("listaUsuarios", uS.list());
+        } catch (Exception e) {
+            model.addAttribute("error", e.getMessage());
+        }
+        return "usersecurity/listUser";
+    }
+
+
 
     @GetMapping("/startsWith/{letter}")
     public List<Users> getUsersWhoseNameStartsWith(@PathVariable String letter) {
         return uS.getUsersWhoseNameStartsWith(letter);
     }
 
-    @PostMapping("/name")
-    public List<UserDTO> list(@RequestBody String name){
-        return uS.list(name).stream().map(x -> {
-            ModelMapper m = new ModelMapper();
-            return m.map(x, UserDTO.class);
-        }).collect(Collectors.toList());
-    }
+//    @GetMapping("/name")
+//    public List<UserDTO> list(@RequestBody String name){
+//        return uS.list(name).stream().map(x -> {
+//            ModelMapper m = new ModelMapper();
+//            return m.map(x, UserDTO.class);
+//        }).collect(Collectors.toList());
+//    }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") int id){

@@ -23,6 +23,13 @@ public class Subscription {
     @JoinColumn(name ="id_user")
     private Users users;
 
+
+
+
+
+
+
+
     public Subscription() {}
 
     public Subscription(int idSubscription, String name, Double amount, LocalDate sub_start_date, Users users) {
@@ -59,7 +66,6 @@ public class Subscription {
     public void setAmount(Double amount) {
         this.amount = amount;
     }
-
     public LocalDate getSub_start_date() {
         return sub_start_date;
     }
