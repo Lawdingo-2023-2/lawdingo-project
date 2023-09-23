@@ -9,6 +9,7 @@
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="" />
 =======
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+<<<<<<< HEAD
 
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/rUserServiceImplement.java" beforeDir="false" />
@@ -30,6 +31,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" afterDir="false" />
 >>>>>>> parent of 1eb77a8 (cambios 14 WD)
+=======
+      <change afterPath="$PROJECT_DIR$/Lawdingo_G4/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> parent of 249376a (cambios 13 WD)
     </list>
 >>>>>>> parent of 3486952 (Update workspace.xml)
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +48,6 @@
         <option value="Record" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="Dockerfile" />
       </list>
     </option>
   </component>
