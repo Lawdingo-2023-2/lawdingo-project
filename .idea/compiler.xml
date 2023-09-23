@@ -14,6 +14,11 @@
         <module name="Lawdingo_G4" />
       </profile>
     </annotationProcessing>
->>>>>>> parent of 99c714f (modify compiler)
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Lawdingo_G4" options="-parameters" />
+    </option>
+>>>>>>> parent of eade7df (intento de Web Deployment)
   </component>
 </project>
