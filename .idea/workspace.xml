@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="" />
+=======
+    <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
+
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/UserServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceimplements/rUserServiceImplement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ISubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/ISubscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lawdingo_G4/src/main/java/pe/edu/upc/aaw/lawdingo_g4/serviceinterfaces/IUserService.java" afterDir="false" />
+
+    </list>
+>>>>>>> parent of 99c714f (modify compiler)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +46,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -69,6 +82,9 @@
       <command value="mvn clean verify -Pbuild-with-fabric-8" />
     </option>
   </component>
+=======
+
+>>>>>>> parent of 99c714f (modify compiler)
   <component name="RunManager">
     <configuration name="LawdingoG4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -94,10 +110,14 @@
       <workItem from="1694450705637" duration="741000" />
       <workItem from="1694460214799" duration="2526000" />
       <workItem from="1694486729950" duration="6976000" />
+<<<<<<< HEAD
       <workItem from="1695444115549" duration="1995000" />
       <workItem from="1695465931655" duration="1400000" />
       <workItem from="1695469482409" duration="281000" />
       <workItem from="1695471081479" duration="398000" />
+=======
+
+>>>>>>> parent of 99c714f (modify compiler)
     </task>
     <servers />
   </component>
