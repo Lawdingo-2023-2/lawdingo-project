@@ -81,6 +81,7 @@
                     <imageName>build-by-spring-boot-plugin-image</imageName>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
             <!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
             <plugin>
                 <groupId>io.fabric8</groupId>
@@ -108,6 +109,8 @@
 =======
             </plugin>
 >>>>>>> parent of eade7df (intento de Web Deployment)
+=======
+>>>>>>> parent of c9a402a (Merge branch 'Enzo')
         </plugins>
     </build>
 
