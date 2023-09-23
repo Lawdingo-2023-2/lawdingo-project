@@ -8,6 +8,8 @@ public interface ISubscriptionService {
     public void  create (Subscription subscription);
     public void  delete (int idSubscription);
     public List<Subscription> list(String name);
+
     public List<String[]> querieSubscription();
+
 
 }

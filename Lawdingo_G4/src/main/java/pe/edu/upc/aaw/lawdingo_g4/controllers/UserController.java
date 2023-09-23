@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
+import pe.edu.upc.aaw.lawdingo_g4.dtos.CourtDTO;
 import pe.edu.upc.aaw.lawdingo_g4.dtos.UserDTO;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Users;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.IUserService;
@@ -48,6 +49,8 @@ public class UserController {
             uS.insert(u);
             return "Usuario creado";
         }
+
+=======
 //        model.addAttribute("listaUsuarios", uS.list());
 //
 //        return "usersecurity/listUser";
@@ -93,8 +96,6 @@ public class UserController {
             return m.map(x, UserDTO.class);
         }).collect(Collectors.toList());
     }
-
-
 }
 
 

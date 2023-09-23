@@ -1,28 +1,34 @@
 package pe.edu.upc.aaw.lawdingo_g4.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 //holas
 @Entity
-@Table(name = "roles",uniqueConstraints = {@UniqueConstraint(columnNames ={ "ruser_id","rol"})})
+@Table(name = "roles",uniqueConstraints = {@UniqueConstraint(columnNames ={ "user_id","rol"})})
 public class Role implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long idrol;
     private String rol;
+
+    //@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @ManyToOne
-    @JoinColumn(name = "ruser_id",nullable = false)
+    @JsonIgnore
+    @JoinColumn(name = "user_id")
+
     private Users user;
 
-    public int getId() {
-        return id;
+    public Long getIdrol() {
+        return idrol;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdrol(Long id) {
+        this.idrol = id;
     }
 
     public String getRol() {

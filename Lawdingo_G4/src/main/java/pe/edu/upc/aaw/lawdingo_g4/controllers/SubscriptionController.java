@@ -33,6 +33,7 @@ public class SubscriptionController {
 
 
 
+
     @GetMapping("/cantidausuarioporsuscripcion")
     public List<UsersBySubscriptionDTO>cantidausuarioporsuscripcion (){
         List<String[]> lista = uS.querieSubscription();
@@ -46,6 +47,7 @@ public class SubscriptionController {
         }
         return listDTO;
     }
+
 
 
 

@@ -18,6 +18,19 @@ public interface IUsersRepository extends JpaRepository<Users,Integer> {
     List<Users> findByStartingLetter(@Param("startsWith") String startsWith);
 
     List<Users>findByName(String name);
+    public Users findByUsername(String username);
+
+    //BUSCAR POR NOMBRE
+    @Query("select count(u.username) from Users u where u.username =:username")
+    public int buscarUsername(@Param("username") String nombre);
+
+
+    //INSERTAR ROLES
+    @Transactional
+    @Modifying
+    @Query(value = "insert into roles (rol, user_id) VALUES (:rol, :user_id)", nativeQuery = true)
+    public void insRol(@Param("rol") String authority, @Param("user_id") Long user_id);
+
 
     public Users findByUsername(String username);
 
