@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f164c3ff-fd12-4829-8811-cb520e8322ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lawdingo_g4/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21954022",
     "settings.editor.selected.configurable": "project.propDebugger",
@@ -97,7 +97,7 @@
       <workItem from="1694460214799" duration="2526000" />
       <workItem from="1694486729950" duration="6976000" />
       <workItem from="1695444115549" duration="1995000" />
-      <workItem from="1695465931655" duration="1030000" />
+      <workItem from="1695465931655" duration="1400000" />
     </task>
     <servers />
   </component>
