@@ -7,6 +7,7 @@ import pe.edu.upc.aaw.lawdingo_g4.dtos.SubscriptionDTO;
 import pe.edu.upc.aaw.lawdingo_g4.entities.Subscription;
 import pe.edu.upc.aaw.lawdingo_g4.serviceinterfaces.ISubscriptionService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -29,10 +30,8 @@ public class SubscriptionController {
         return uS.list(name);
     }
 
-    @GetMapping("/{userId}/user-subscriptions")
-    public List<Subscription> getSubscriptionsByUser(@PathVariable int userId) {
-        return uS.getSubscriptionsByUser(userId);
-    }
+
+   
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id){
