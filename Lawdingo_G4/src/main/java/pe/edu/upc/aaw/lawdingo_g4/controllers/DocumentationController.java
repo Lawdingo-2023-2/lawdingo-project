@@ -21,6 +21,12 @@ public class DocumentationController {
         Documentation d=m.map(dto,Documentation.class);
         dS.insert(d);
     }
+    @PutMapping
+    public void modificar(@RequestBody DocumentationDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Documentation d = m.map(dto, Documentation.class);
+        dS.insert(d);
+    }
     @GetMapping
     public List<DocumentationDTO> listar(){
         return dS.list().stream().map(x -> {

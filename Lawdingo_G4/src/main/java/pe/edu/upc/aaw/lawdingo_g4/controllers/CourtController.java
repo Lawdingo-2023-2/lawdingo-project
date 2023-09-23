@@ -20,6 +20,12 @@ public class CourtController {
         Court c=m.map(dto,Court.class);
         cS.insert(c);
     }
+    @PutMapping
+    public void modificar(@RequestBody CourtDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Court c = m.map(dto, Court.class);
+        cS.insert(c);
+    }
     @GetMapping
     public List<CourtDTO>listar(){
         return cS.list().stream().map(x -> {

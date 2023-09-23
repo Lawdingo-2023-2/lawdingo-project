@@ -9,4 +9,5 @@ public interface IDistrictService {
     public List<District> list();
     public void delete(int idDistrict);
     public District listId(int idDistrict);
+    public List<String[]> quantityProceedingByDistrict();
 }
