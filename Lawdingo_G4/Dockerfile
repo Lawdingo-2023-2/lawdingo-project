@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM amazoncorretto:17
 COPY --from=build target/lawdingo_g4-0.0.1-SNAPSHOT.war lawdingog4.war
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["java","-jar","lawdingog4.war"]
